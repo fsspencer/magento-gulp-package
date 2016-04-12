@@ -65,3 +65,16 @@ That's it! Have a happy coding!
 For more information: www.codealist.com
 
 
+### NOTE: For Ubuntu Users
+
+If you can't use gulp command on your terminal or you are receiving the error "No such file or directory...", try the following:
+
+```sh
+$ sudo apt-get --purge remove node 
+$ sudo apt-get --purge remove nodejs 
+$ sudo apt-get install nodejs
+$ sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
+That should work!
+
