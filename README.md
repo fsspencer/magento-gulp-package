@@ -47,8 +47,10 @@ Run the gulp watcher
 $ gulp watch
 ```
 
-For sass you need to modify/add/remove scss files on scss/base, scss/helpers and scss/modules. Everytime you make a change on a single scss file, it will be append to the css/styles.css file.
-Same with javascript files. Every script file you want to add, you need to do it on js/csutom. There is a sample file called _my_custom_scripts.js. Whenever you add or remove js files, you need to edit you gulpfile and append the file list on the array at line 46.
+For sass you need to modify/add/remove scss files on scss/base, scss/helpers or scss/modules. Everytime you make a change on a single scss file, changes will be appended to the css/styles.css file.
+Same with javascript files. 
+
+Every script file you want to add, you need to do it on js/csutom. There is a sample file called _my_custom_scripts.js. Whenever you add or remove js files, you need to edit you gulpfile and append the file list on the array at line 46.
 Such as scss files, every js modification you made, will be appended to js/script.js. 
 
 
