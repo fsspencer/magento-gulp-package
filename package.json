@@ -1,0 +1,33 @@
+{
+  "name": "ecommerce121_b2b",
+  "version": "1.0.0",
+  "description": "MidwestParts: Magento site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "121ecommerce",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "keywords": [
+    "extension",
+    "magento",
+    "121ecommerce",
+    "sass",
+    "gulp",
+    "js"
+  ]
+}
