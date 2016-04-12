@@ -1,4 +1,4 @@
-# Gulp Package for Magento
+# Gulp Package for Magento 1.x
 
 This is a simple skin package for Magento 1 to let you implement the following features to make you able use a quicker and fancy method of coding.
 
