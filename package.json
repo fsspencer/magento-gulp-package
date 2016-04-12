@@ -1,13 +1,13 @@
 {
-  "name": "ecommerce121_b2b",
-  "version": "1.0.0",
-  "description": "MidwestParts: Magento site",
+  "name": "magento-gulp-package",
+  "version": "1.0.1",
+  "description": "This is a simple skin package for Magento 1 to let you implement the following features to make you able use a quicker and fancy method of coding.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "121ecommerce",
-  "license": "ISC",
+  "author": "Francis S. Spencer",
+  "license": "GNU",
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
     "font-awesome": "^4.5.0",
@@ -25,7 +25,8 @@
   "keywords": [
     "extension",
     "magento",
-    "121ecommerce",
+    "codealist",
+    "fsspencer",
     "sass",
     "gulp",
     "js"
