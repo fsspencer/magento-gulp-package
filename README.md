@@ -46,6 +46,20 @@ Run the gulp watcher
 ```sh
 $ gulp watch
 ```
-Open your project url and make sure LiveReload is enabled. Then everythin should be working well.
+
+For sass you need to modify/add/remove scss files on scss/base, scss/helpers and scss/modules. Everytime you make a change on a single scss file, it will be append to the css/styles.css file.
+Same with javascript files. Every script file you want to add, you need to do it on js/csutom. There is a sample file called _my_custom_scripts.js. Whenever you add or remove js files, you need to edit you gulpfile and append the file list on the array at line 46.
+Such as scss files, every js modification you made, will be appended to js/script.js. 
+
+
+
+### Implement on Magento
+
+To make this work on Magento, you need to add css/styles.css and js/script.js at the head of each module you want. If you want to apply them on every Magento page, you need to add it on the <default> tag.
+
+That's it! Have a happy coding!
+
+
+For more information: www.codealist.com
 
 
