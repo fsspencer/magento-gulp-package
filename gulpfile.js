@@ -6,7 +6,8 @@ var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     cache       = require('gulp-cache'),
     cssmin      = require('gulp-cssmin'),
-    livereload  = require('gulp-livereload');
+    livereload  = require('gulp-livereload'),
+    plumber = require('gulp-plumber');
 
 
 var config = {
@@ -26,6 +27,7 @@ var config = {
 // Sass
 gulp.task('css', function() {
     var stream = gulp.src('scss/styles.scss')
+        .pipe(plumber())
         .pipe(sass())
         .pipe(cssmin())
         .pipe(gulp.dest('css'));
@@ -52,6 +54,7 @@ gulp.task('js', function() {
 
     var stream = gulp
         .src(scripts)
+        .pipe(plumber())
         .pipe(concat('script.js'));
 
     if (config.uglifyJS === true) {
@@ -68,6 +71,7 @@ gulp.task('js', function() {
 gulp.task('images', function() {
     return gulp
         .src('src/images/**/*')
+        .pipe(plumber())
         .pipe(gulp.dest('images'))
         .pipe(livereload())
         .pipe(notify({ message: 'Successfully processed image' }));
