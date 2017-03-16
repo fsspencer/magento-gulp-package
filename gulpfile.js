@@ -28,7 +28,11 @@ var config = {
 gulp.task('css', function() {
     var stream = gulp.src('scss/styles.scss')
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({errLogToConsole: true}))
+        .on('error', function (err) {
+            console.log(err.message);
+            this.emit('end');
+        })
         .pipe(cssmin())
         .pipe(gulp.dest('css'));
 
